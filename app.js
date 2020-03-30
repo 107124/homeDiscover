@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
+import Home from "./home";
+import Navbar from "./navbar";
+
 export default class App extends Component {
   render() {
     return (
       <div className='app'>
-        <h1>DevCamp React Starter</h1>
-        <h2>React Redux Router</h2>
+        <Navbar />
+        <Home />
+        hi
       </div>
     );
   }
