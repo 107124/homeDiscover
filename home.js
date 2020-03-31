@@ -9,26 +9,51 @@ export default class Home extends React.Component {
         super(props);
         this.state = {
             test: "Initial State",
+            listing: "",
+            listings: ["hello", "world"],
+            listing_id: "",
+            prop_status: "",
+            property_id: ""
         };
     }
 
-    renderListings = () => {
-        const data = [
-            "How old are you?",
-            "You're out for a walk and notice a snake 5 ft. from you. Do you kill it?",
-            "question3",
-            "question4",
-            "question5",
-            "question6",
-            "question7",
-            "question8",
-            "question9"
-        ];
+//     componentDidMount() {
+//     fetch("https://realtor.p.rapidapi.com/properties/detail?listing_id=608763437&prop_status=for_sale&property_id=4599450556", {
+// 	"method": "GET",
+// 	"headers": {
+// 		"x-rapidapi-host": "realtor.p.rapidapi.com",
+// 		"x-rapidapi-key": "7603016162msh8263f88a5aa10dfp18e91ajsna3493aef8fcf"
+//     }
+    
+//     })
+//     .then(response => response.json())
+//     .then(data =>
+//         this.setState({
+//             listings: data,
+//             isLoading: false,
+//             listing_id: "608763437",
+//             prop_status: "for_sale",
+//             property_id: "4599450556"
+//         }))
+//     .catch(err => {
+//         console.log("error in the GET request", err);
+//     });
+// }
 
-        return data.map(listing => {
-            return <Listings item={listing} />;
+      renderListings = () => {
+        return this.state.listings.map(listing => {
+          return (
+            <Listings
+              listings={this.state.listings}
+              listing_id={listing.listing_id}
+              status={listing.prop_status}
+              property_id={listing.property_id}
+
+            />
+          );
         });
-    };
+      };
+
 
     render() {
         return (
