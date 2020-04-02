@@ -9,7 +9,6 @@ export default class App extends Component {
       <div className='app'>
         <Navbar />
         <Home />
-        hi
       </div>
     );
   }
