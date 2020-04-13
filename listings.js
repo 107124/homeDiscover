@@ -28,11 +28,19 @@ export default class Listings extends React.Component {
                     <img className="home-image" src={this.state.image} alt="image" />
                 </div>
                 <div className="right-container">
-                    <h1>{this.state.address}</h1>
-                    <p>For: {this.state.status}</p>
-                    <p>Bed: {this.state.bed}</p>
-                    <p>Bath: {this.state.bath}</p>
-                    <p>{this.state.price}</p>
+                    <div className="right-side">
+                        <div className="right-header">
+                            <p className="listing-header">{this.state.address}</p>
+                        </div>
+                        <div className="left-details">
+                            <p>For: {this.state.status}</p>
+                            <p>Bed: {this.state.bed}</p>
+                        </div>
+                        <div className="right-details">
+                            <p>Bath: {this.state.bath}</p>
+                            <p>{this.state.price}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
