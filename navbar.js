@@ -1,6 +1,7 @@
 import React from "react";
 
-import Logo from "../images/homeDiscover.png"
+import Logo from "../images/homeDiscover.png";
+import Logo2 from "../images/homeDiscover1.png";
 
 export default class Navbar extends React.Component {
     constructor(props) {
@@ -18,6 +19,9 @@ export default class Navbar extends React.Component {
                     <img className="logo" src={Logo} alt="Home Discover" />
                 </div>
                 <div className="divide-nav"></div>
+                <div className="home-discover-logo">
+                    <img className="logo2" src={Logo2} alt="Home Discover" />
+                </div>
                 <div className="links">
                     <a>Rent</a>
                     <a>Buy</a>
