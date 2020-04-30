@@ -14,15 +14,14 @@ export default class Navbar extends React.Component {
     render() {
         return (
             <div className="navbar-container">
-                <div className="left-nav-links">
-                    <a>Buy</a>
-                    <a>Rent</a>
-                    <a>Sell</a>
-                </div>
                 <div className="center-nav-logo">
                     <img className="logo" src={Logo} alt="Home Discover" />
                 </div>
-                <div className="right-nav-links">
+                <div className="divide-nav"></div>
+                <div className="links">
+                    <a>Rent</a>
+                    <a>Buy</a>
+                    <a>Sell</a>
                     <a>Max</a>
                     <a>Beds</a>
                     <a>Type</a>
