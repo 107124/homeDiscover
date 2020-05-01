@@ -152,7 +152,8 @@ export default class Home extends React.Component {
     return (
       <div className="homepage-container">
         <div className="left-map">
-          <Iframe className="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35059845.75868844!2d-72.9285079806818!3d40.43635630259214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1585601138209!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></Iframe>
+    
+          <Iframe className="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35059845.75868844!2d-72.9285079806818!3d40.43635630259214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1585601138209!5m2!1sen!2sus" frameborder="0" style="border:0; boxShadow: inset -11px 0px 15px -5px rgba(0,0,0,0.75); " allowfullscreen="" aria-hidden="false" tabindex="0"></Iframe>
         </div>
         <div className="listings-left">
           {this.renderListings()}

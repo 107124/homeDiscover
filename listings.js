@@ -33,7 +33,7 @@ export default class Listings extends React.Component {
                             <p className="listing-header">{this.state.address}</p>
                         </div>
                         <div className="left-details">
-                            <p>For: {this.state.status}</p>
+                            <p>Type: {this.state.status}</p>
                             <p>Bed: {this.state.bed}</p>
                         </div>
                         <div className="right-details">
