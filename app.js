@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Home from "./home";
 import Navbar from "./navbar";
+import Sell from "./sell";
 
 export default class App extends Component {
   render() {
@@ -9,6 +10,7 @@ export default class App extends Component {
       <div className='app'>
         <Navbar />
         <Home />
+        {/* <Sell /> */}
       </div>
     );
   }

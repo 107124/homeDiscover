@@ -29,7 +29,7 @@ export default class Sell extends React.Component {
         return (
             <div>
                 <div>hello sell your place!</div>
-                <DropzoneComponent />
+                
             </div>
         )
     }
